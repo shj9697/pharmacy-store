@@ -44,7 +44,4 @@ This is a **Pharmacy Management App** built with multiple pages to manage orders
 - `Products Page` – Manage inventory and stock
 - `Users Page` – Manage pharmacy users
 
-## ⚡ How to Run
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/shj9697/pharmacy-app.git
+
