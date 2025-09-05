@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy App - Orders</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js"></script>
+</head>
+<body onload="init()">
+  <div class="header-container">
+    <a href="/index.html" class="brand-logo-button">
+      <img src="assets/logo.png" alt="brand-logo" class="brand-logo" />
+      <p>Medplus</p>
+    </a>
+    <div class="nav-links">
+      <a href="/index.html" class="active">Orders</a>
+      <a href="/products.html">Products</a>
+      <a href="/users.html">Users</a>
+      <button onclick="handleLogout()" class="logout-button">Logout</button>
+    </div>
+  </div>
+  <div class="orders-container">
+    <h1>Orders</h1>
+    <div class="orders-content">
+      <div class="filter-container">
+        <div class="filter-header">
+          <p>Filters:</p>
+          <div class="filter-list">
+            <button onclick="fetchOrderList('New')" class="filter-item active">New</button>
+            <button onclick="fetchOrderList('Packed')" class="filter-item active">Packed</button>
+            <button onclick="fetchOrderList('InTransit')" class="filter-item active">InTransit</button>
+            <button onclick="fetchOrderList('Delivered')" class="filter-item active">Delivered</button>
+          </div>
+        </div>
+        <div class="count-container">
+          <p>Count:</p>
+          <p id="list-count">0</p>
+        </div>
+      </div>
+      <div class="order-table">
+        <table id="orders-table">
+          <thead>
+            <th>ID</th>
+            <th>Customer</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
