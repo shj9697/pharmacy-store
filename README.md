@@ -34,9 +34,9 @@ This is a **Pharmacy Management App** built with multiple pages to manage orders
   - **Location**
 
 ## 🚀 Tech Stack
-- React.js (Frontend)
-- Tailwind CSS (Styling)  
-*(Adjust this section based on the actual technologies you used)*
+- HTML
+- CSS
+- JAVASCRIPT
 
 ## 📂 Project Structure
 - `Login Page` – Authentication
